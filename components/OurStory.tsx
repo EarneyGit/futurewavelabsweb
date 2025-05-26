@@ -33,7 +33,7 @@ export function OurStory() {
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Expanded our expertise in high-quality reel production and digital marketing strategies, helping brands create compelling visual narratives.
+            Expanded our expertise in high-quality reel production and end-to-end digital marketing strategies, helping brands create compelling visual narratives.
           </p>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
             Developed our signature approach to combining technical excellence with creative storytelling, setting new standards in digital content creation.
@@ -49,7 +49,7 @@ export function OurStory() {
               <span className="text-primary-gradient font-semibold">UI/UX Design</span>
             </div>
             <div className="rounded-lg bg-gradient-to-br from-secondary/10 via-accent/10 to-primary/10 h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] flex items-center justify-center">
-              <span className="text-primary-gradient font-semibold">Digital Marketing</span>
+              <span className="text-primary-gradient font-semibold">Digital Marketing ( End to End )</span>
             </div>
           </div>
         </div>
@@ -99,7 +99,7 @@ export function OurStory() {
   ];
   
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-background relative overflow-hidden md:overflow-visible">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary-gradient">
@@ -110,7 +110,7 @@ export function OurStory() {
           </p>
         </div>
         
-        <div className="w-full">
+        <div className="w-full relative">
           <Timeline data={data} />
         </div>
       </div>

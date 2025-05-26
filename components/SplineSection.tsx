@@ -6,7 +6,7 @@ import { Spotlight } from "@/components/ui/spotlight"
  
 export function SplineSection() {
   return (
-    <section className="pt-20 pb-0">
+    <section className="pt-20 pb-0 bg-background">
       <div className="container mx-auto px-4">
         <Card className="w-full h-[500px] bg-black/[0.96] relative overflow-hidden">
           <Spotlight

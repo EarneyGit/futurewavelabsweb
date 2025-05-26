@@ -32,8 +32,8 @@ const services = [
   },
   {
     icon: <FiTrendingUp className="text-4xl" style={{ color: '#ec4899' }} />,
-    title: 'Digital Marketing',
-    description: 'Results-driven digital marketing campaigns that increase visibility, drive traffic, and generate qualified leads.',
+    title: 'Digital Marketing ( End to End )',
+    description: 'Comprehensive end-to-end digital marketing solutions covering strategy, execution, optimization, and analytics to maximize your online presence and ROI.',
   },
 ];
 
@@ -63,7 +63,7 @@ const Services = () => {
   };
 
   return (
-    <section id="services" className="py-20 bg-muted">
+    <section id="services" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>

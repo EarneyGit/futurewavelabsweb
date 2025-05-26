@@ -45,8 +45,8 @@ export function GlowingEffectDemo() {
           <GridItem
             area="md:[grid-area:3/1/4/13] xl:[grid-area:2/8/3/13]"
             icon={<TrendingUp className="h-4 w-4" style={{color: '#ec4899'}} />}
-            title="Digital Marketing"
-            description="Strategic marketing campaigns to boost your online presence and drive conversions."
+            title="Digital Marketing ( End to End )"
+            description="Comprehensive end-to-end digital marketing solutions covering strategy, execution, optimization, and analytics to maximize your online presence and ROI."
           />
         </ul>
       </div>

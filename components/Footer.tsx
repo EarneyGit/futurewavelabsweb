@@ -4,7 +4,7 @@ const Footer = () => {
   const currentYear = 2024;
   
   return (
-    <footer className="bg-muted py-16">
+    <footer className="bg-background py-16">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
@@ -41,7 +41,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link href="#services" className="text-foreground/70 hover:text-primary transition-colors">
-                  Digital Marketing
+                  Digital Marketing ( End to End )
                 </Link>
               </li>
             </ul>

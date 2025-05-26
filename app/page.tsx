@@ -6,6 +6,7 @@ import { CaseDemo } from "@/components/CaseDemo";
 import Reels from "@/components/Reels";
 import { OurStory } from "@/components/OurStory";
 import Contact from "@/components/Contact";
+import TechStackSection from "@/components/TechStackSection";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 
@@ -20,6 +21,7 @@ export default function Home() {
         <Portfolio />
         <CaseDemo />
         <Reels />
+        <TechStackSection />
         <Contact />
       </main>
       <Footer />

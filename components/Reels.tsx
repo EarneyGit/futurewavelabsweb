@@ -90,16 +90,146 @@ const additionalReels = [
     views: '189K',
     thumbnail: '/placeholder-reel.jpg',
   },
+  {
+    id: 11,
+    title: 'Startup Launch',
+    description: 'Dynamic launch event coverage for emerging tech startup.',
+    duration: '1:25',
+    views: '234K',
+    thumbnail: '/placeholder-reel.jpg',
+  },
+  {
+    id: 12,
+    title: 'Travel Vlog',
+    description: 'Inspiring travel content for lifestyle brand collaboration.',
+    duration: '2:05',
+    views: '456K',
+    thumbnail: '/placeholder-reel.jpg',
+  },
+  {
+    id: 13,
+    title: 'Cooking Tutorial',
+    description: 'Step-by-step cooking guide for restaurant chain.',
+    duration: '1:35',
+    views: '178K',
+    thumbnail: '/placeholder-reel.jpg',
+  },
+  {
+    id: 14,
+    title: 'Fashion Showcase',
+    description: 'Trendy fashion collection reveal for clothing brand.',
+    duration: '0:50',
+    views: '321K',
+    thumbnail: '/placeholder-reel.jpg',
+  },
+  {
+    id: 15,
+    title: 'Tech Review',
+    description: 'In-depth gadget review for electronics company.',
+    duration: '2:30',
+    views: '567K',
+    thumbnail: '/placeholder-reel.jpg',
+  },
+  {
+    id: 16,
+    title: 'Fitness Challenge',
+    description: '30-day fitness transformation challenge series.',
+    duration: '1:15',
+    views: '289K',
+    thumbnail: '/placeholder-reel.jpg',
+  },
+  {
+    id: 17,
+    title: 'Music Video',
+    description: 'Creative music video production for independent artist.',
+    duration: '3:20',
+    views: '890K',
+    thumbnail: '/placeholder-reel.jpg',
+  },
+  {
+    id: 18,
+    title: 'Home Renovation',
+    description: 'Before and after home makeover showcase.',
+    duration: '1:55',
+    views: '134K',
+    thumbnail: '/placeholder-reel.jpg',
+  },
+  {
+    id: 19,
+    title: 'Art Process',
+    description: 'Time-lapse of digital art creation process.',
+    duration: '1:10',
+    views: '245K',
+    thumbnail: '/placeholder-reel.jpg',
+  },
+  {
+    id: 20,
+    title: 'Gaming Highlights',
+    description: 'Epic gaming moments compilation for streaming platform.',
+    duration: '2:45',
+    views: '678K',
+    thumbnail: '/placeholder-reel.jpg',
+  },
+  {
+    id: 21,
+    title: 'Green Living',
+    description: 'Sustainable lifestyle tips for eco-friendly brand.',
+    duration: '1:40',
+    views: '167K',
+    thumbnail: '/placeholder-reel.jpg',
+  },
+  {
+    id: 22,
+    title: 'Pet Training',
+    description: 'Dog training techniques for pet care company.',
+    duration: '1:20',
+    views: '298K',
+    thumbnail: '/placeholder-reel.jpg',
+  },
+  {
+    id: 23,
+    title: 'DIY Crafts',
+    description: 'Creative crafting ideas for hobby store chain.',
+    duration: '2:10',
+    views: '356K',
+    thumbnail: '/placeholder-reel.jpg',
+  },
+  {
+    id: 24,
+    title: 'Urban Photography',
+    description: 'Street photography tips and techniques showcase.',
+    duration: '1:30',
+    views: '189K',
+    thumbnail: '/placeholder-reel.jpg',
+  },
+  {
+    id: 25,
+    title: 'Health & Wellness',
+    description: 'Mental health awareness campaign for wellness center.',
+    duration: '2:00',
+    views: '423K',
+    thumbnail: '/placeholder-reel.jpg',
+  },
 ];
 
 const Reels = () => {
-  const [showAll, setShowAll] = useState(false);
+  const [visibleCount, setVisibleCount] = useState(5);
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
 
-  const displayedReels = showAll ? [...initialReels, ...additionalReels] : initialReels;
+  const allReels = [...initialReels, ...additionalReels];
+  const displayedReels = allReels.slice(0, visibleCount);
+  const hasMoreReels = visibleCount < allReels.length;
+
+  const handleLoadMore = () => {
+    setVisibleCount(prev => Math.min(prev + 5, allReels.length));
+  };
+
+  const handleShowLess = () => {
+    setVisibleCount(5);
+  };
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -121,7 +251,7 @@ const Reels = () => {
   };
 
   return (
-    <section id="reels" className="py-20 bg-muted">
+    <section id="reels" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Reels</h2>
@@ -166,15 +296,27 @@ const Reels = () => {
           ))}
         </motion.div>
 
-        {/* View All Button */}
-        <div className="text-center mt-12">
-          <button
-            onClick={() => setShowAll(!showAll)}
-            className="inline-flex items-center gap-2 px-6 py-3 bg-primary-gradient text-white rounded-full bg-primary-gradient-hover transition-all duration-300"
-          >
-            {showAll ? 'Show Less' : 'View All Reels'}
-            <FiChevronDown className={`transition-transform ${showAll ? 'rotate-180' : ''}`} />
-          </button>
+        {/* Buttons */}
+        <div className="text-center mt-12 flex flex-col sm:flex-row justify-center items-center gap-4">
+          {hasMoreReels && (
+            <button
+              onClick={handleLoadMore}
+              className="inline-flex items-center gap-2 px-6 py-3 bg-primary-gradient text-white rounded-full bg-primary-gradient-hover transition-all duration-300"
+            >
+              View More Reels
+              <FiChevronDown />
+            </button>
+          )}
+          
+          {visibleCount > 5 && (
+            <button
+              onClick={handleShowLess}
+              className="inline-flex items-center gap-2 px-6 py-3 bg-background border border-primary text-primary rounded-full hover:bg-primary hover:text-white transition-all duration-300"
+            >
+              Show Less
+              <FiChevronDown className="rotate-180" />
+            </button>
+          )}
         </div>
       </div>
     </section>

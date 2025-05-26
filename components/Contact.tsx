@@ -53,7 +53,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20">
+    <section id="contact" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
@@ -147,7 +147,7 @@ const Contact = () => {
                       <option value="App Development">App Development</option>
                       <option value="Software Development">Software Development</option>
                       <option value="Reel Production">Reel Production</option>
-                      <option value="Digital Marketing">Digital Marketing</option>
+                      <option value="Digital Marketing ( End to End )">Digital Marketing ( End to End )</option>
                       <option value="Other">Other</option>
                     </select>
                   </div>
