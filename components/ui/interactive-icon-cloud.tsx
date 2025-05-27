@@ -24,7 +24,7 @@ export const cloudProps: Omit<ICloud, "children"> = {
     reverse: true,
     depth: 1,
     wheelZoom: false,
-    imageScale: 2,
+    imageScale: 2.3,
     activeCursor: "default",
     tooltip: "native",
     initial: [0.1, -0.1],
@@ -37,7 +37,7 @@ export const cloudProps: Omit<ICloud, "children"> = {
   },
 }
 
-export const renderCustomIcon = (icon: SimpleIcon, theme: string) => {
+export const renderCustomIcon = (icon: SimpleIcon, theme: string, size: number = 48) => {
   const bgHex = theme === "light" ? "#f3f2ef" : "#080510"
   const fallbackHex = theme === "light" ? "#6e6e73" : "#ffffff"
   const minContrastRatio = theme === "dark" ? 2 : 1.2
@@ -47,7 +47,7 @@ export const renderCustomIcon = (icon: SimpleIcon, theme: string) => {
     bgHex,
     fallbackHex,
     minContrastRatio,
-    size: 42,
+    size: size,
     aProps: {
       href: undefined,
       target: undefined,
@@ -66,6 +66,18 @@ type IconData = Awaited<ReturnType<typeof fetchSimpleIcons>>
 export function IconCloud({ iconSlugs }: DynamicCloudProps) {
   const [data, setData] = useState<IconData | null>(null)
   const { theme } = useTheme()
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768)
+    }
+    
+    checkMobile()
+    window.addEventListener('resize', checkMobile)
+    
+    return () => window.removeEventListener('resize', checkMobile)
+  }, [])
 
   useEffect(() => {
     fetchSimpleIcons({ slugs: iconSlugs }).then(setData)
@@ -74,10 +86,13 @@ export function IconCloud({ iconSlugs }: DynamicCloudProps) {
   const renderedIcons = useMemo(() => {
     if (!data) return null
 
+    // Use larger icons on mobile for better visibility
+    const iconSize = isMobile ? 52 : 45
+
     return Object.values(data.simpleIcons).map((icon) =>
-      renderCustomIcon(icon, theme || "light"),
+      renderCustomIcon(icon, theme || "light", iconSize),
     )
-  }, [data, theme])
+  }, [data, theme, isMobile])
 
   return (
     <Cloud {...cloudProps}>

@@ -47,7 +47,7 @@ export function IconCloudDemo() {
 
   if (!mounted) {
     return (
-      <div className="relative flex size-full max-w-lg items-center justify-center overflow-hidden rounded-lg bg-background px-20 pb-20 pt-8 ">
+      <div className="relative flex size-full max-w-sm md:max-w-lg items-center justify-center overflow-hidden rounded-lg bg-background px-16 md:px-20 pb-16 md:pb-20 pt-6 md:pt-8">
         <div className="flex items-center justify-center w-full h-64">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
         </div>
@@ -56,7 +56,7 @@ export function IconCloudDemo() {
   }
 
   return (
-    <div className="relative flex size-full max-w-lg items-center justify-center overflow-hidden rounded-lg bg-background px-20 pb-20 pt-8 ">
+    <div className="relative flex size-full max-w-sm md:max-w-lg items-center justify-center overflow-hidden rounded-lg bg-background px-16 md:px-20 pb-16 md:pb-20 pt-6 md:pt-8">
       <IconCloud iconSlugs={slugs} />
     </div>
   )
