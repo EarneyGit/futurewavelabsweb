@@ -92,7 +92,7 @@ export function OurStory() {
   ];
   
   return (
-    <section className="py-20 bg-background relative overflow-hidden md:overflow-visible">
+    <section className="pt-8 pb-8 bg-background relative overflow-hidden md:overflow-visible">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">

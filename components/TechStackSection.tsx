@@ -47,7 +47,7 @@ export function IconCloudDemo() {
 
   if (!mounted) {
     return (
-      <div className="relative flex size-full max-w-sm md:max-w-lg items-center justify-center overflow-hidden rounded-lg bg-background px-16 md:px-20 pb-16 md:pb-20 pt-6 md:pt-8">
+      <div className="relative flex size-full max-w-md md:max-w-xl items-center justify-center overflow-hidden rounded-lg bg-background px-16 md:px-20 pb-16 md:pb-20 pt-6 md:pt-8">
         <div className="flex items-center justify-center w-full h-64">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
         </div>
@@ -56,7 +56,7 @@ export function IconCloudDemo() {
   }
 
   return (
-    <div className="relative flex size-full max-w-sm md:max-w-lg items-center justify-center overflow-hidden rounded-lg bg-background px-16 md:px-20 pb-16 md:pb-20 pt-6 md:pt-8">
+    <div className="relative flex size-full max-w-md md:max-w-xl items-center justify-center overflow-hidden rounded-lg bg-background px-16 md:px-20 pb-16 md:pb-20 pt-6 md:pt-8">
       <IconCloud iconSlugs={slugs} />
     </div>
   )
@@ -71,7 +71,7 @@ const TechStackSection = () => {
   });
 
   return (
-    <section className="py-20 bg-background">
+    <section className="pt-8 pb-8 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">

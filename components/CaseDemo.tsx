@@ -2,9 +2,9 @@ import { Case } from "@/components/ui/cases-with-infinite-scroll";
 
 function CaseDemo() {
   return (
-    <div className="block">
+    <section className="pt-8 pb-8 bg-background">
       <Case />
-    </div>
+    </section>
   );
 }
 

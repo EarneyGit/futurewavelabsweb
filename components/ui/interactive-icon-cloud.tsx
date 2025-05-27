@@ -24,7 +24,7 @@ export const cloudProps: Omit<ICloud, "children"> = {
     reverse: true,
     depth: 1,
     wheelZoom: false,
-    imageScale: 2.3,
+    imageScale: 2.8,
     activeCursor: "default",
     tooltip: "native",
     initial: [0.1, -0.1],
@@ -87,7 +87,7 @@ export function IconCloud({ iconSlugs }: DynamicCloudProps) {
     if (!data) return null
 
     // Use larger icons on mobile for better visibility
-    const iconSize = isMobile ? 52 : 45
+    const iconSize = isMobile ? 58 : 50
 
     return Object.values(data.simpleIcons).map((icon) =>
       renderCustomIcon(icon, theme || "light", iconSize),

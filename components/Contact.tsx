@@ -53,11 +53,11 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-background">
+    <section id="contact" className="pt-0 pb-0 md:pt-8 md:pb-8 bg-background scroll-mt-24">
       <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
-          <div className="w-20 h-1 bg-primary-gradient mx-auto mb-6"></div>
+        <div className="text-center max-w-3xl mx-auto mb-0 md:mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-0 md:mb-4">Get In Touch</h2>
+          <div className="w-20 h-1 bg-primary-gradient mx-auto mb-1 md:mb-6"></div>
           <p className="text-lg text-foreground/80">
             Ready to start your next project? Contact us today for a free consultation and quote.
           </p>
@@ -68,12 +68,12 @@ const Contact = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.5 }}
-          className="grid grid-cols-1 lg:grid-cols-2 gap-12"
+          className="grid grid-cols-1 lg:grid-cols-2 gap-1 md:gap-12"
         >
           {/* Contact Form */}
-          <div className="bg-background rounded-2xl p-8 shadow-sm">
+          <div className="bg-background rounded-2xl p-1 md:p-8 shadow-sm">
             {isSubmitted ? (
-              <div className="h-full flex flex-col items-center justify-center text-center p-8">
+              <div className="h-full flex flex-col items-center justify-center text-center p-4 md:p-8">
                 <FiCheckCircle className="text-5xl mb-4" style={{ color: '#8b5cf6' }} />
                 <h3 className="text-2xl font-bold mb-4">Message Sent!</h3>
                 <p className="text-foreground/70 mb-6">
@@ -82,7 +82,7 @@ const Contact = () => {
               </div>
             ) : (
               <form onSubmit={handleSubmit}>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-1 mb-1 md:gap-6 md:mb-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium mb-2">
                       Your Name
@@ -115,7 +115,7 @@ const Contact = () => {
                   </div>
                 </div>
                 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-1 mb-1 md:gap-6 md:mb-6">
                   <div>
                     <label htmlFor="phone" className="block text-sm font-medium mb-2">
                       Phone Number (Optional)
@@ -153,7 +153,7 @@ const Contact = () => {
                   </div>
                 </div>
                 
-                <div className="mb-6">
+                <div className="mb-1 md:mb-6">
                   <label htmlFor="message" className="block text-sm font-medium mb-2">
                     Your Message
                   </label>
@@ -193,12 +193,12 @@ const Contact = () => {
           {/* Contact Information */}
           <div className="flex flex-col justify-between">
             <div>
-              <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
-              <p className="text-foreground/70 mb-8">
+              <h3 className="text-2xl font-bold mb-2 md:mb-6">Contact Information</h3>
+              <p className="text-foreground/70 mb-2 md:mb-8">
                 Feel free to reach out to us through any of the following channels. We&apos;re always happy to help with your digital needs.
               </p>
               
-              <div className="space-y-6">
+              <div className="space-y-2 md:space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="p-3 rounded-full bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10">
                     <FiMail className="text-xl" style={{ color: '#8b5cf6' }} />
@@ -231,8 +231,8 @@ const Contact = () => {
               </div>
             </div>
             
-            <div className="mt-12">
-              <h3 className="text-2xl font-bold mb-6">Follow Us</h3>
+            <div className="mt-2 md:mt-12">
+              <h3 className="text-2xl font-bold mb-2 md:mb-6">Follow Us</h3>
               <div className="flex gap-4">
                 <a href="https://www.facebook.com/earneysolutions/" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-muted hover:bg-primary hover:text-white transition-colors">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
