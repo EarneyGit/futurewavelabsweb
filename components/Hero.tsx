@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center pt-0 mt-8 md:-mt-16 overflow-hidden">
+    <section className="relative min-h-screen flex items-center mt-20 md:mt-24 lg:mt-28 overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 -z-10 opacity-30">
         <div className="absolute top-20 right-20 w-64 h-64 rounded-full bg-primary/20 blur-3xl" />

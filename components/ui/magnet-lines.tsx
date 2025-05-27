@@ -11,7 +11,7 @@ function MagnetLines({
   className = "",
   style = {}
 }) {
-  const containerRef = useRef(null);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const container = containerRef.current;
@@ -19,7 +19,7 @@ function MagnetLines({
 
     const items = container.querySelectorAll("span");
 
-    const onPointerMove = (pointer) => {
+    const onPointerMove = (pointer: { x: number; y: number }) => {
       items.forEach((item) => {
         const rect = item.getBoundingClientRect();
         const centerX = rect.x + rect.width / 2;
@@ -60,7 +60,7 @@ function MagnetLines({
         "--rotate": `${baseAngle}deg`,
         transform: "rotate(var(--rotate))",
         willChange: "transform"
-      }}
+      } as React.CSSProperties}
     />
   ));
 

@@ -9,32 +9,32 @@ import { FiPlay, FiChevronDown } from 'react-icons/fi';
 const initialReels = [
   {
     id: 1,
-    title: 'Brand Campaign Launch',
-    description: 'High-energy promotional video for a tech startup launch.',
+    title: 'Product Showcase',
+    description: 'A dynamic showcase of our latest product features and innovations.',
     duration: '0:45',
     views: '125K',
     thumbnail: '/placeholder-reel.jpg',
   },
   {
     id: 2,
-    title: 'Product Demo Showcase',
-    description: 'Engaging product demonstration highlighting key features.',
+    title: 'Brand Story',
+    description: 'The journey and vision behind our brand, told through compelling visuals.',
     duration: '1:20',
     views: '89K',
     thumbnail: '/placeholder-reel.jpg',
   },
   {
     id: 3,
-    title: 'Behind the Scenes',
-    description: 'Creative process showcase for a fashion brand.',
+    title: 'Success Story',
+    description: 'Real results and impact achieved through our solutions.',
     duration: '0:55',
     views: '156K',
     thumbnail: '/placeholder-reel.jpg',
   },
   {
     id: 4,
-    title: 'Event Highlights',
-    description: 'Dynamic coverage of a corporate event and conference.',
+    title: 'Behind the Scenes',
+    description: 'A glimpse into our creative process and team collaboration.',
     duration: '1:10',
     views: '203K',
     thumbnail: '/placeholder-reel.jpg',
@@ -84,14 +84,6 @@ const additionalReels = [
   },
   {
     id: 10,
-    title: 'Brand Story',
-    description: 'Emotional storytelling about company mission and values.',
-    duration: '1:45',
-    views: '189K',
-    thumbnail: '/placeholder-reel.jpg',
-  },
-  {
-    id: 11,
     title: 'Startup Launch',
     description: 'Dynamic launch event coverage for emerging tech startup.',
     duration: '1:25',
@@ -99,7 +91,7 @@ const additionalReels = [
     thumbnail: '/placeholder-reel.jpg',
   },
   {
-    id: 12,
+    id: 11,
     title: 'Travel Vlog',
     description: 'Inspiring travel content for lifestyle brand collaboration.',
     duration: '2:05',
@@ -107,7 +99,7 @@ const additionalReels = [
     thumbnail: '/placeholder-reel.jpg',
   },
   {
-    id: 13,
+    id: 12,
     title: 'Cooking Tutorial',
     description: 'Step-by-step cooking guide for restaurant chain.',
     duration: '1:35',
@@ -115,7 +107,7 @@ const additionalReels = [
     thumbnail: '/placeholder-reel.jpg',
   },
   {
-    id: 14,
+    id: 13,
     title: 'Fashion Showcase',
     description: 'Trendy fashion collection reveal for clothing brand.',
     duration: '0:50',
@@ -123,7 +115,7 @@ const additionalReels = [
     thumbnail: '/placeholder-reel.jpg',
   },
   {
-    id: 15,
+    id: 14,
     title: 'Tech Review',
     description: 'In-depth gadget review for electronics company.',
     duration: '2:30',
@@ -131,7 +123,7 @@ const additionalReels = [
     thumbnail: '/placeholder-reel.jpg',
   },
   {
-    id: 16,
+    id: 15,
     title: 'Fitness Challenge',
     description: '30-day fitness transformation challenge series.',
     duration: '1:15',
@@ -139,7 +131,7 @@ const additionalReels = [
     thumbnail: '/placeholder-reel.jpg',
   },
   {
-    id: 17,
+    id: 16,
     title: 'Music Video',
     description: 'Creative music video production for independent artist.',
     duration: '3:20',
@@ -147,7 +139,7 @@ const additionalReels = [
     thumbnail: '/placeholder-reel.jpg',
   },
   {
-    id: 18,
+    id: 17,
     title: 'Home Renovation',
     description: 'Before and after home makeover showcase.',
     duration: '1:55',
@@ -155,7 +147,7 @@ const additionalReels = [
     thumbnail: '/placeholder-reel.jpg',
   },
   {
-    id: 19,
+    id: 18,
     title: 'Art Process',
     description: 'Time-lapse of digital art creation process.',
     duration: '1:10',
@@ -163,7 +155,7 @@ const additionalReels = [
     thumbnail: '/placeholder-reel.jpg',
   },
   {
-    id: 20,
+    id: 19,
     title: 'Gaming Highlights',
     description: 'Epic gaming moments compilation for streaming platform.',
     duration: '2:45',
@@ -171,7 +163,7 @@ const additionalReels = [
     thumbnail: '/placeholder-reel.jpg',
   },
   {
-    id: 21,
+    id: 20,
     title: 'Green Living',
     description: 'Sustainable lifestyle tips for eco-friendly brand.',
     duration: '1:40',
@@ -179,7 +171,7 @@ const additionalReels = [
     thumbnail: '/placeholder-reel.jpg',
   },
   {
-    id: 22,
+    id: 21,
     title: 'Pet Training',
     description: 'Dog training techniques for pet care company.',
     duration: '1:20',
@@ -187,7 +179,7 @@ const additionalReels = [
     thumbnail: '/placeholder-reel.jpg',
   },
   {
-    id: 23,
+    id: 22,
     title: 'DIY Crafts',
     description: 'Creative crafting ideas for hobby store chain.',
     duration: '2:10',
@@ -195,7 +187,7 @@ const additionalReels = [
     thumbnail: '/placeholder-reel.jpg',
   },
   {
-    id: 24,
+    id: 23,
     title: 'Urban Photography',
     description: 'Street photography tips and techniques showcase.',
     duration: '1:30',
@@ -203,7 +195,7 @@ const additionalReels = [
     thumbnail: '/placeholder-reel.jpg',
   },
   {
-    id: 25,
+    id: 24,
     title: 'Health & Wellness',
     description: 'Mental health awareness campaign for wellness center.',
     duration: '2:00',

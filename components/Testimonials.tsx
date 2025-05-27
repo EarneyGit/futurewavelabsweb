@@ -1,160 +1,98 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import { FiChevronLeft, FiChevronRight, FiStar } from 'react-icons/fi';
+import { TestimonialsColumn } from "@/components/testimonials-columns-1";
+import { motion } from "framer-motion";
 
-// Sample testimonials data - replace with actual testimonials later
 const testimonials = [
   {
-    id: 1,
-    name: 'Sarah Johnson',
-    position: 'CEO, TechStart Inc.',
-    testimonial: 'Earney Portfolio transformed our online presence with a stunning website that perfectly captures our brand identity. Their attention to detail and strategic approach to development resulted in a 40% increase in our conversion rate.',
-    rating: 5,
-    // Replace with actual image path
-    image: '/placeholder-avatar.jpg',
+    text: "Outstanding web development work! The team delivered a modern, responsive website that perfectly captures our brand. The attention to detail is exceptional.",
+    gender: "female",
+    name: "Priya Krishnan",
+    role: "Founder, Mysore Digital Solutions",
   },
   {
-    id: 2,
-    name: 'Michael Chen',
-    position: 'Marketing Director, FreshFoods',
-    testimonial: 'The team at Earney Portfolio produced incredible video content for our brand campaign. The quality of their reels exceeded our expectations and helped us reach a whole new audience on social media.',
-    rating: 5,
-    // Replace with actual image path
-    image: '/placeholder-avatar.jpg',
+    text: "Professional, reliable, and incredibly talented. They transformed our outdated website into a stunning digital experience that our customers love.",
+    gender: "male",
+    name: "Arjun Reddy",
+    role: "CEO, Hyderabad Tech Ventures",
   },
   {
-    id: 3,
-    name: 'Jessica Williams',
-    position: 'Founder, Wellness Hub',
-    testimonial: 'Our mobile app developed by Earney Portfolio has been a game-changer for our business. The user experience is seamless, and we have received overwhelmingly positive feedback from our customers.',
-    rating: 5,
-    // Replace with actual image path
-    image: '/placeholder-avatar.jpg',
+    text: "The mobile app they developed exceeded all expectations. Clean code, beautiful UI, and seamless performance across all devices.",
+    gender: "female",
+    name: "Kavya Nair",
+    role: "Entrepreneur, Kochi Innovations",
   },
   {
-    id: 4,
-    name: 'David Rodriguez',
-    position: 'COO, Finance Solutions',
-    testimonial: 'The custom software solution delivered by Earney Portfolio has streamlined our operations and saved us countless hours of manual work. Their team was professional, responsive, and delivered exactly what we needed.',
-    rating: 5,
-    // Replace with actual image path
-    image: '/placeholder-avatar.jpg',
+    text: "Exceptional full-stack development skills. They built our e-commerce platform from scratch with advanced features and robust security.",
+    gender: "male",
+    name: "Vikram Subramanian",
+    role: "Founder, Chennai Commerce Hub",
+  },
+  {
+    text: "Their expertise in React and Next.js is impressive. Fast delivery, clean code, and excellent communication throughout the project.",
+    gender: "female",
+    name: "Meera Iyer",
+    role: "CEO, Bangalore StartupLab",
+  },
+  {
+    text: "Amazing work on our company website redesign. The new site is fast, SEO-optimized, and has significantly improved our conversion rates.",
+    gender: "female",
+    name: "Ananya Sharma",
+    role: "Founder, Coimbatore Digital Agency",
+  },
+  {
+    text: "Top-notch development team! They delivered a complex web application on time and within budget. Highly recommend their services.",
+    gender: "male",
+    name: "Rajesh Kumar",
+    role: "Entrepreneur, Trivandrum Tech Solutions",
+  },
+  {
+    text: "Incredible attention to user experience and modern design principles. Our new platform has received amazing feedback from users.",
+    gender: "female",
+    name: "Deepika Menon",
+    role: "CEO, Mangalore Design Studio",
+  },
+  {
+    text: "Professional development services with cutting-edge technology stack. They helped us modernize our entire digital infrastructure.",
+    gender: "male",
+    name: "Karthik Raman",
+    role: "Founder, Madurai Software Systems",
   },
 ];
 
+const firstColumn = testimonials.slice(0, 3);
+const secondColumn = testimonials.slice(3, 6);
+const thirdColumn = testimonials.slice(6, 9);
+
 const Testimonials = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
-
-  // Auto-advance the testimonials
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
-    }, 8000);
-    return () => clearInterval(interval);
-  }, []);
-
-  const handlePrev = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length);
-  };
-
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
-  };
-
   return (
-    <section id="testimonials" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">What Our Clients Say</h2>
-          <div className="w-20 h-1 bg-primary-gradient mx-auto mb-6"></div>
-          <p className="text-lg text-foreground/80">
-            Don't just take our word for it. Here's what our clients have to say about working with us.
-          </p>
-        </div>
-
+    <section className="bg-background my-20 relative">
+      <div className="container z-10 mx-auto">
         <motion.div
-          ref={ref}
-          initial={{ opacity: 0 }}
-          animate={inView ? { opacity: 1 } : { opacity: 0 }}
-          transition={{ duration: 0.5 }}
-          className="relative max-w-4xl mx-auto"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+          viewport={{ once: true }}
+          className="flex flex-col items-center justify-center max-w-[540px] mx-auto"
         >
-          <div className="overflow-hidden">
-            <div 
-              className="flex transition-transform duration-500 ease-in-out"
-              style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-            >
-              {testimonials.map((testimonial) => (
-                <div 
-                  key={testimonial.id} 
-                  className="min-w-full p-4"
-                >
-                  <div className="bg-background rounded-2xl p-8 md:p-10 shadow-sm">
-                    <div className="flex flex-col md:flex-row md:items-center gap-6">
-                      <div className="flex-shrink-0">
-                        {/* Placeholder div until actual images are provided */}
-                        <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center">
-                          <span className="text-primary font-bold">
-                            {testimonial.name.split(' ').map(n => n[0]).join('')}
-                          </span>
-                        </div>
-                      </div>
-                      <div className="flex-1">
-                        <div className="flex mb-2">
-                          {[...Array(testimonial.rating)].map((_, i) => (
-                            <FiStar key={i} className="fill-current" style={{ color: '#d946ef' }} />
-                          ))}
-                        </div>
-                        <p className="text-lg mb-6 italic text-foreground/80">"{testimonial.testimonial}"</p>
-                        <div>
-                          <h4 className="font-bold text-lg">{testimonial.name}</h4>
-                          <p className="text-sm text-foreground/60">{testimonial.position}</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
+          <div className="flex justify-center">
+            <div className="border py-1 px-4 rounded-lg">Testimonials</div>
           </div>
 
-          {/* Navigation Arrows */}
-          <button 
-            onClick={handlePrev}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:translate-x-0 w-10 h-10 rounded-full bg-background shadow-md flex items-center justify-center z-10 hover:bg-primary hover:text-white transition-colors"
-            aria-label="Previous testimonial"
-          >
-            <FiChevronLeft className="text-xl" />
-          </button>
-          <button 
-            onClick={handleNext}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-0 w-10 h-10 rounded-full bg-background shadow-md flex items-center justify-center z-10 hover:bg-primary hover:text-white transition-colors"
-            aria-label="Next testimonial"
-          >
-            <FiChevronRight className="text-xl" />
-          </button>
-
-          {/* Dots Indicator */}
-          <div className="flex justify-center mt-8 space-x-2">
-            {testimonials.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentIndex(index)}
-                className={`w-3 h-3 rounded-full transition-colors ${
-                  currentIndex === index ? 'bg-primary' : 'bg-border'
-                }`}
-                aria-label={`Go to testimonial ${index + 1}`}
-              />
-            ))}
-          </div>
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold tracking-tighter mt-5">
+            What our clients say
+          </h2>
+          <div className="w-20 h-1 bg-primary-gradient mx-auto mt-6 mb-6"></div>
+          <p className="text-center opacity-75">
+            See what our customers have to say about us.
+          </p>
         </motion.div>
+
+        <div className="flex justify-center gap-6 mt-10 [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)] max-h-[740px] overflow-hidden">
+          <TestimonialsColumn testimonials={firstColumn} duration={15} />
+          <TestimonialsColumn testimonials={secondColumn} className="hidden md:block" duration={19} />
+          <TestimonialsColumn testimonials={thirdColumn} className="hidden lg:block" duration={17} />
+        </div>
       </div>
     </section>
   );

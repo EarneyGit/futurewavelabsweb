@@ -9,9 +9,10 @@ export function GlowingEffectDemo() {
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary-gradient">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
             Our Services
           </h2>
+          <div className="w-20 h-1 bg-primary-gradient mx-auto mb-6"></div>
           <p className="text-xl text-foreground/80 max-w-3xl mx-auto">
             Comprehensive digital solutions to elevate your brand and drive business growth
           </p>
