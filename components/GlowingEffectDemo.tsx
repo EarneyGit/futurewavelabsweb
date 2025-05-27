@@ -1,6 +1,6 @@
 "use client";
 
-import { Code, Smartphone, Video, Palette, TrendingUp, Globe } from "lucide-react";
+import { Code, Smartphone, Video, TrendingUp, Globe } from "lucide-react";
 import { GlowingEffect } from "@/components/ui/glowing-effect";
 import { cn } from "@/lib/utils";
 

@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import Image from 'next/image';
 
 // Define project categories
 const categories = ['All', 'Websites', 'Apps', 'Software'];

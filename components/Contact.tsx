@@ -77,7 +77,7 @@ const Contact = () => {
                 <FiCheckCircle className="text-5xl mb-4" style={{ color: '#8b5cf6' }} />
                 <h3 className="text-2xl font-bold mb-4">Message Sent!</h3>
                 <p className="text-foreground/70 mb-6">
-                  Thank you for reaching out. We'll get back to you as soon as possible.
+                  Thank you for reaching out. We&apos;ll get back to you as soon as possible.
                 </p>
               </div>
             ) : (
@@ -195,7 +195,7 @@ const Contact = () => {
             <div>
               <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
               <p className="text-foreground/70 mb-8">
-                Feel free to reach out to us through any of the following channels. We're always happy to help with your digital needs.
+                Feel free to reach out to us through any of the following channels. We&apos;re always happy to help with your digital needs.
               </p>
               
               <div className="space-y-6">

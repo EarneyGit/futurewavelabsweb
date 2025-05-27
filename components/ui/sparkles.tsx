@@ -16,7 +16,7 @@ interface SparklesProps {
   minOpacity?: number | null
   color?: string
   background?: string
-  options?: any
+  options?: object
 }
 
 export function Sparkles({
@@ -62,7 +62,7 @@ export function Sparkles({
       },
       move: {
         enable: true,
-        direction: "none",
+        direction: "none" as const,
         speed: {
           min: minSpeed || speed / 10,
           max: speed,
