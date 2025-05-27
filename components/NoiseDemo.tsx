@@ -1,4 +1,4 @@
-import { SplashCursor } from "@/components/ui/splash-cursor"
+import { SplashCursor } from "@/components/ui/splash-cursor.js"
 
 export function NoiseDemo() {
   return (
