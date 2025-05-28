@@ -30,7 +30,7 @@ export const AnimatedGalleryDemo = () => {
   return (
     <section className="pt-8 pb-8 bg-background">
       <div className="relative">
-      <ContainerStagger className="relative z-[9999] -mb-12 place-self-center px-6 pt-12 text-center">
+      <ContainerStagger className="relative z-[9999] -mb-12 place-self-center px-6 pt-12 pb-6 md:pb-12 text-center">
         <ContainerAnimated>
           <h1 className="text-4xl font-bold md:text-5xl text-foreground">
             Building{" "}
@@ -65,7 +65,7 @@ export const AnimatedGalleryDemo = () => {
 
       <ContainerScroll className="relative h-[350vh]">
         <ContainerSticky className="h-svh">
-          <GalleryContainer className="">
+          <GalleryContainer className="pt-4 md:pt-0">
             <GalleryCol yRange={["-10%", "2%"]} className="-mt-2">
               {IMAGES_1.map((imageUrl, index) => (
                 // eslint-disable-next-line @next/next/no-img-element

@@ -85,7 +85,9 @@ export const ContainerSticky = ({
   return (
     <div
       className={cn(
-        "sticky left-0 top-0 min-h-[30rem] w-full overflow-hidden",
+        "sticky left-0 w-full overflow-hidden",
+        "top-24 min-h-[calc(100vh-6rem)]",
+        "md:top-0 md:min-h-[30rem]",
         className
       )}
       style={{
@@ -115,6 +117,7 @@ export const GalleryContainer = ({
     <motion.div
       className={cn(
         "relative grid size-full grid-cols-3 gap-2 rounded-2xl",
+        "p-2 md:p-0",
         className
       )}
       style={{
