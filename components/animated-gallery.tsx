@@ -86,7 +86,7 @@ export const ContainerSticky = ({
     <div
       className={cn(
         "sticky left-0 w-full overflow-hidden",
-        "top-40 min-h-[calc(100vh-10rem)]",
+        "top-48 min-h-[calc(100vh-12rem)]",
         "md:top-0 md:min-h-[30rem]",
         className
       )}
