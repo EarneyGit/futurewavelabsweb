@@ -53,7 +53,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="pt-8 pb-8 bg-background scroll-mt-24">
+    <section id="contact" className="pt-8 pb-8 bg-background scroll-mt-24 relative z-50 -mt-48 md:mt-0">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
