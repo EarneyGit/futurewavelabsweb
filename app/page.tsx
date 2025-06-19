@@ -8,6 +8,7 @@ import Reels from "@/components/Reels";
 import { OurStory } from "@/components/OurStory";
 import Contact from "@/components/Contact";
 import TechStackSection from "@/components/TechStackSection";
+import InfiniteDragSection from "@/components/InfiniteDragSection";
 import Testimonials from "@/components/Testimonials";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -23,6 +24,7 @@ export default function Home() {
         <Portfolio />
         <CaseDemo />
         <Reels />
+        <InfiniteDragSection />
         <TechStackSection />
         <Testimonials />
         <AnimatedGalleryDemo />

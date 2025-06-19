@@ -1,16 +1,16 @@
 "use client";
 
-import { Code, Smartphone, Video, TrendingUp, Globe } from "lucide-react";
+import { Code, Smartphone, Video, TrendingUp, Globe, Brain } from "lucide-react";
 import { GlowingEffect } from "@/components/ui/glowing-effect";
 import { cn } from "@/lib/utils";
 
 export function GlowingEffectDemo() {
   return (
-    <section id="services" className="pt-8 pb-8 bg-background scroll-mt-24">
+    <section id="expertise" className="pt-8 pb-8 bg-background scroll-mt-24">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-            Our Services
+            Our Expertise
           </h2>
           <div className="w-20 h-1 bg-primary-gradient mx-auto mb-6"></div>
           <p className="text-xl text-foreground/80 max-w-3xl mx-auto">
@@ -18,7 +18,7 @@ export function GlowingEffectDemo() {
           </p>
         </div>
         
-        <ul className="grid grid-cols-1 grid-rows-none gap-4 md:grid-cols-12 md:grid-rows-3 lg:gap-4 xl:max-h-[34rem] xl:grid-rows-2">
+        <ul className="grid grid-cols-1 grid-rows-none gap-4 md:grid-cols-12 md:grid-rows-3 lg:gap-4 xl:max-h-[36rem] xl:grid-rows-2">
           <GridItem
             area="md:[grid-area:1/1/2/7] xl:[grid-area:1/1/2/5]"
             icon={<Globe className="h-4 w-4" style={{color: '#8b5cf6'}} />}
@@ -26,25 +26,31 @@ export function GlowingEffectDemo() {
             description="Custom websites built with modern technologies for optimal performance and user experience."
           />
           <GridItem
-            area="md:[grid-area:1/7/2/13] xl:[grid-area:2/1/3/5]"
-            icon={<Smartphone className="h-4 w-4" style={{color: '#a855f7'}} />}
-            title="App Development"
-            description="Native and cross-platform mobile applications that engage users and drive business growth."
+            area="md:[grid-area:1/7/2/13] xl:[grid-area:1/5/2/8]"
+            icon={<Brain className="h-4 w-4" style={{color: '#7c3aed'}} />}
+            title="AI Automations / AI Agents"
+            description="Intelligent automation solutions and AI agents to streamline workflows and enhance productivity."
           />
           <GridItem
-            area="md:[grid-area:2/1/3/7] xl:[grid-area:1/5/3/8]"
-            icon={<Code className="h-4 w-4" style={{color: '#c084fc'}} />}
-            title="Software Development"
-            description="Custom software solutions tailored to streamline your business processes and operations."
-          />
-          <GridItem
-            area="md:[grid-area:2/7/3/13] xl:[grid-area:1/8/2/13]"
+            area="md:[grid-area:2/1/3/7] xl:[grid-area:1/8/2/13]"
             icon={<Video className="h-4 w-4" style={{color: '#d946ef'}} />}
             title="High-Quality Reels"
             description="Professional video content creation and editing for social media and marketing campaigns."
           />
           <GridItem
-            area="md:[grid-area:3/1/4/13] xl:[grid-area:2/8/3/13]"
+            area="md:[grid-area:2/7/3/13] xl:[grid-area:2/1/3/5]"
+            icon={<Smartphone className="h-4 w-4" style={{color: '#a855f7'}} />}
+            title="App Development"
+            description="Native and cross-platform mobile applications that engage users and drive business growth."
+          />
+          <GridItem
+            area="md:[grid-area:3/1/4/7] xl:[grid-area:2/5/3/8]"
+            icon={<Code className="h-4 w-4" style={{color: '#c084fc'}} />}
+            title="Software Development"
+            description="Custom software solutions tailored to streamline your business processes and operations."
+          />
+          <GridItem
+            area="md:[grid-area:3/7/4/13] xl:[grid-area:2/8/3/13]"
             icon={<TrendingUp className="h-4 w-4" style={{color: '#ec4899'}} />}
             title="Digital Marketing ( End to End )"
             description="Comprehensive end-to-end digital marketing solutions covering strategy, execution, optimization, and analytics to maximize your online presence and ROI."

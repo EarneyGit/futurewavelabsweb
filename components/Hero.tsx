@@ -29,10 +29,10 @@ const Hero = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
               <Link 
-                href="#services" 
+                href="#expertise" 
                 className="px-10 py-4 text-lg rounded-full bg-primary-gradient text-white font-medium bg-primary-gradient-hover transition-all duration-300 shadow-lg"
               >
-                Explore Services
+                Explore Expertise
               </Link>
               <Link 
                 href="#contact" 

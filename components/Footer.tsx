@@ -17,30 +17,30 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold mb-6">Our Services</h4>
+            <h4 className="text-lg font-semibold mb-6">Our Expertise</h4>
             <ul className="space-y-3">
               <li>
-                <Link href="#services" className="text-foreground/70 hover:text-primary transition-colors">
+                <Link href="#expertise" className="text-foreground/70 hover:text-primary transition-colors">
                   Website Development
                 </Link>
               </li>
               <li>
-                <Link href="#services" className="text-foreground/70 hover:text-primary transition-colors">
+                <Link href="#expertise" className="text-foreground/70 hover:text-primary transition-colors">
                   App Development
                 </Link>
               </li>
               <li>
-                <Link href="#services" className="text-foreground/70 hover:text-primary transition-colors">
+                <Link href="#expertise" className="text-foreground/70 hover:text-primary transition-colors">
                   Software Development
                 </Link>
               </li>
               <li>
-                <Link href="#services" className="text-foreground/70 hover:text-primary transition-colors">
+                <Link href="#expertise" className="text-foreground/70 hover:text-primary transition-colors">
                   Reel Production
                 </Link>
               </li>
               <li>
-                <Link href="#services" className="text-foreground/70 hover:text-primary transition-colors">
+                <Link href="#expertise" className="text-foreground/70 hover:text-primary transition-colors">
                   Digital Marketing ( End to End )
                 </Link>
               </li>
@@ -51,8 +51,8 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-6">Quick Links</h4>
             <ul className="space-y-3">
               <li>
-                <Link href="#services" className="text-foreground/70 hover:text-primary transition-colors">
-                  Services
+                <Link href="#expertise" className="text-foreground/70 hover:text-primary transition-colors">
+                  Expertise
                 </Link>
               </li>
               <li>
