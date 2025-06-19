@@ -148,7 +148,7 @@ export function OurStory() {
           </h2>
           <div className="w-20 h-1 bg-primary-gradient mx-auto mb-6"></div>
           <p className="text-xl text-foreground/80 max-w-3xl mx-auto">
-            The journey of innovation, creativity, and excellence that defines Earney Portfolio
+            The journey of innovation, creativity, and excellence that defines Earney&apos;s Portfolio
           </p>
         </div>
         

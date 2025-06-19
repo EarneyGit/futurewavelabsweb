@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:800&display=optional" rel="stylesheet" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
         <link rel="apple-touch-icon" href="/favicon.png" />

@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { FiPlay, FiChevronDown } from 'react-icons/fi';
+import { FiChevronDown } from 'react-icons/fi';
 import Script from 'next/script';
 
 // Actual Vimeo reels

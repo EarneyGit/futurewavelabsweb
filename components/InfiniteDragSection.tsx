@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { 
   GridBody,
@@ -166,9 +167,11 @@ const DemoOne = () => {
               className={`relative group ${sizeClass}`}
             >
               <div className="relative overflow-hidden rounded-lg shadow-lg">
-                <img
+                <Image
                   src={image.src}
                   alt={image.alt}
+                  width={500}
+                  height={isLandscape ? 320 : 450}
                   className="pointer-events-none w-full h-auto object-cover"
                   style={{ 
                     maxHeight: isLandscape ? '320px' : '450px',
@@ -203,7 +206,7 @@ const InfiniteDragSection = () => {
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
             Drag and explore our five-year journey together. Experience the moments, 
-            milestones, and memories that shaped our team's incredible story.
+            milestones, and memories that shaped our team&apos;s incredible story.
           </p>
         </motion.div>
 
