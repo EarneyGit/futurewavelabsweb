@@ -8,7 +8,9 @@ const client = new Retell({
   apiKey: RETELL_API_KEY,
 });
 
-// Agent configuration - this will create the "Aura" agent for Future Wave Labs
+// Agent configuration - using the specified agent ID
+const AGENT_ID = "agent_bd4de73ddb5d2a51c10945c6f3";
+
 const agentConfig = {
   "agent_name": "FWL Agent - Aura",
   "response_engine": {
@@ -33,56 +35,9 @@ export async function POST(request: NextRequest) {
     console.log('=== Creating Retell web call ===');
     console.log('Using API Key:', RETELL_API_KEY ? 'Available' : 'Missing');
     
-    // First, create or get the agent
-    let agentId = process.env.RETELL_AGENT_ID;
-    
-    if (!agentId) {
-      // Create agent if not exists
-      console.log('Creating new agent with config:', {
-        name: agentConfig.agent_name,
-        voice: agentConfig.voice_id,
-        language: agentConfig.language
-      });
-      
-      try {
-        const agentResponse = await client.agent.create({
-          response_engine: agentConfig.response_engine,
-          voice_id: agentConfig.voice_id,
-          language: agentConfig.language,
-          agent_name: agentConfig.agent_name,
-          max_call_duration_ms: agentConfig.max_call_duration_ms,
-          end_call_after_silence_ms: agentConfig.end_call_after_silence_ms,
-          interruption_sensitivity: agentConfig.interruption_sensitivity,
-          ambient_sound: agentConfig.ambient_sound,
-          ring_duration_ms: agentConfig.ring_duration_ms,
-          post_call_analysis_model: agentConfig.post_call_analysis_model,
-          opt_out_sensitive_data_storage: agentConfig.opt_out_sensitive_data_storage,
-          opt_in_signed_url: agentConfig.opt_in_signed_url,
-          user_dtmf_options: agentConfig.user_dtmf_options,
-        });
-        agentId = agentResponse.agent_id;
-        console.log('✅ Agent created successfully with ID:', agentId);
-      } catch (agentError: any) {
-        console.error('❌ Error creating agent:', {
-          error: agentError.message,
-          status: agentError.status,
-          details: agentError
-        });
-        
-        // Return more detailed error information
-        return NextResponse.json(
-          { 
-            success: false, 
-            error: 'Failed to create agent',
-            details: agentError.message || 'Unknown agent creation error',
-            retellError: agentError
-          },
-          { status: 500 }
-        );
-      }
-    } else {
-      console.log('Using existing agent ID:', agentId);
-    }
+    // Use the specific agent ID
+    const agentId = AGENT_ID;
+    console.log('Using specified agent ID:', agentId);
 
     // Create web call
     console.log('Creating web call with agent ID:', agentId);
