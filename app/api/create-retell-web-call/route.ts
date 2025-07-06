@@ -9,13 +9,13 @@ const client = new Retell({
 });
 
 // Agent configuration - using the specified agent ID
-const AGENT_ID = "agent_bd4de73ddb5d2a51c10945c6f3";
+const AGENT_ID = "agent_5a21a130c76cd62e4fb7a4c86d";
 
 const agentConfig = {
   "agent_name": "FWL Agent - Aura",
   "response_engine": {
     "type": "retell-llm" as const,
-    "llm_id": "llm_2411c596baa3772282bd65af177b"
+    "llm_id": "llm_43c899bb92769dcad339c11a5524"
   },
   "language": "en-IN" as const,
   "opt_out_sensitive_data_storage": false,
@@ -92,10 +92,30 @@ export async function POST(request: NextRequest) {
 
 // Add a GET method for testing
 export async function GET() {
-  return NextResponse.json({
-    message: "Retell Web Call API endpoint is working",
-    timestamp: new Date().toISOString(),
-    hasApiKey: !!RETELL_API_KEY,
-    apiKeyPreview: RETELL_API_KEY ? `${RETELL_API_KEY.substring(0, 8)}...` : 'None'
-  });
+  try {
+    // Test API connection and list agents
+    const agentsResponse = await client.agent.list();
+    
+    return NextResponse.json({
+      message: "Retell Web Call API endpoint is working",
+      timestamp: new Date().toISOString(),
+      hasApiKey: !!RETELL_API_KEY,
+      apiKeyPreview: RETELL_API_KEY ? `${RETELL_API_KEY.substring(0, 8)}...` : 'None',
+      availableAgents: agentsResponse.agents?.map(agent => ({
+        id: agent.agent_id,
+        name: agent.agent_name,
+        voice: agent.voice_id
+      })) || [],
+      totalAgents: agentsResponse.agents?.length || 0
+    });
+  } catch (error: any) {
+    return NextResponse.json({
+      message: "Retell Web Call API endpoint is working but agent listing failed",
+      timestamp: new Date().toISOString(),
+      hasApiKey: !!RETELL_API_KEY,
+      apiKeyPreview: RETELL_API_KEY ? `${RETELL_API_KEY.substring(0, 8)}...` : 'None',
+      error: error.message,
+      status: error.status
+    });
+  }
 } 
