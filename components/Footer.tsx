@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Footer = () => {
   const currentYear = 2025;
@@ -6,17 +7,23 @@ const Footer = () => {
   return (
     <footer className="bg-background py-16">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-          <div>
-            <h3 className="text-xl font-bold mb-6">
-              <span className="text-primary-gradient">Earney</span> Portfolio
-            </h3>
-            <p className="text-foreground/70 mb-6">
-              Providing Comprehensive and Scalable AI-Powered Automation Solutions to Transform, Optimize, and Future-Proof Your Business Processes.
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+          <div className="lg:pr-4">
+            <div className="mb-6">
+              <Image
+                src="/fwl-logo-white.png"
+                alt="FWL Logo"
+                width={240}
+                height={90}
+                className="h-20 w-auto"
+              />
+            </div>
+            <p className="text-foreground/70 mb-6 leading-relaxed">
+              Innovation across diverse and critical sectors to Transform, Optimize, and Future-Proof Your Business Processes.
             </p>
           </div>
           
-          <div>
+          <div className="lg:px-2">
             <h4 className="text-lg font-semibold mb-6">Our Expertise</h4>
             <ul className="space-y-3">
               <li>
@@ -47,7 +54,7 @@ const Footer = () => {
             </ul>
           </div>
           
-          <div>
+          <div className="lg:px-2">
             <h4 className="text-lg font-semibold mb-6">Quick Links</h4>
             <ul className="space-y-3">
               <li>
@@ -73,11 +80,11 @@ const Footer = () => {
             </ul>
           </div>
           
-          <div>
+          <div className="lg:pl-4">
             <h4 className="text-lg font-semibold mb-6">Contact Us</h4>
             <ul className="space-y-3 text-foreground/70">
-              <li>Kolapakkam, Chennai, India</li>
-              <li>hello@earney.in</li>
+              <li>Bangalore, India</li>
+              <li>hello@futurewavelabs.in</li>
               <li>+91 99418 75131</li>
             </ul>
           </div>
@@ -85,7 +92,7 @@ const Footer = () => {
         
         <div className="border-t border-border mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-foreground/60 text-sm mb-4 md:mb-0">
-            &copy; {currentYear} Earney Portfolio. All rights reserved.
+            &copy; {currentYear} Future Wave Labs. All rights reserved.
           </p>
           
           <div className="flex space-x-6">

@@ -57,7 +57,7 @@ export const AnimatedGalleryDemo = () => {
       
       <div className="pointer-events-none absolute z-10 h-[70vh] w-full"
         style={{
-          background: "linear-gradient(135deg, #8b5cf6 0%, #a855f7 25%, #c084fc 50%, #d946ef 75%, #ec4899 100%)",
+          background: "linear-gradient(135deg, #dc2626 0%, #ef4444 25%, #f87171 50%, #fca5a5 75%, #fecaca 100%)",
           filter: "blur(84px)",
           mixBlendMode: "screen",
         }}

@@ -1,14 +1,12 @@
 import Navbar from "@/components/Navbar";
-import { SplineSection } from "@/components/SplineSection";
+import Hero from "@/components/Hero";
+import AboutUsSection from "@/components/about-us-section";
+import NewsSection from "@/components/NewsSection";
 import { AnimatedGalleryDemo } from "@/components/AnimatedGalleryDemo";
 import { GlowingEffectDemo } from "@/components/GlowingEffectDemo";
-import Portfolio from "@/components/Portfolio";
-import { CaseDemo } from "@/components/CaseDemo";
 import Reels from "@/components/Reels";
-import { OurStory } from "@/components/OurStory";
 import Contact from "@/components/Contact";
 import TechStackSection from "@/components/TechStackSection";
-import InfiniteDragSection from "@/components/InfiniteDragSection";
 import Testimonials from "@/components/Testimonials";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -18,13 +16,11 @@ export default function Home() {
     <>
       <Navbar />
       <main>
-        <SplineSection />
+        <Hero />
+        <AboutUsSection />
+        <NewsSection />
         <GlowingEffectDemo />
-        <OurStory />
-        <Portfolio />
-        <CaseDemo />
         <Reels />
-        <InfiniteDragSection />
         <TechStackSection />
         <Testimonials />
         <AnimatedGalleryDemo />

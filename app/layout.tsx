@@ -20,8 +20,8 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Earney Portfolio | Marketing & Development Agency",
-  description: "Professional digital marketing agency specializing in website development, mobile apps, software solutions, and high-quality video content creation.",
+      title: "Future Wave Labs | Innovation across diverse and critical sectors",
+  description: "Leading AI automation company specializing in intelligent agents, website development, mobile apps, software solutions, and cutting-edge digital transformation.",
   icons: {
     icon: [
       { url: '/favicon.png', sizes: '32x32', type: 'image/png' },

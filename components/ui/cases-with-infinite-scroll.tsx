@@ -34,7 +34,7 @@ function Case() {
         <div className="flex flex-col  gap-10">
           <div>
             <h2 className="text-xl md:text-3xl md:text-5xl tracking-tighter lg:max-w-xl font-regular text-left mb-6">
-              Trusted by thousands of businesses
+              Trusted by thousands of businesses worldwide
             </h2>
             <div className="w-20 h-1 bg-primary-gradient mb-6"></div>
           </div>

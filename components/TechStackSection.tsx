@@ -135,11 +135,11 @@ const TechStackSection = () => {
                   </div>
                   <div className="flex flex-wrap gap-1">
                     {['React', 'Vue.js', 'Angular', 'Next.js'].map((tech, index) => (
-                      <span key={index} className="px-2 py-0.5 text-xs font-medium bg-primary/10 text-primary rounded-full border border-primary/20 hover:bg-primary/20 transition-colors">
+                      <span key={index} className="px-2 py-0.5 text-xs font-medium bg-primary/10 text-gray-400 rounded-full border border-primary/20 hover:bg-primary/20 transition-colors">
                         {tech}
                       </span>
                     ))}
-                    <span className="px-2 py-0.5 text-xs font-medium bg-muted text-foreground/60 rounded-full">+4 more</span>
+                    <span className="px-2 py-0.5 text-xs font-medium bg-muted text-gray-400 rounded-full">+4 more</span>
                   </div>
                 </div>
               </motion.div>
@@ -162,11 +162,11 @@ const TechStackSection = () => {
                   </div>
                   <div className="flex flex-wrap gap-1">
                     {['Node.js', 'Python', 'Java', 'Express.js'].map((tech, index) => (
-                      <span key={index} className="px-2 py-0.5 text-xs font-medium bg-secondary/10 text-secondary rounded-full border border-secondary/20 hover:bg-secondary/20 transition-colors">
+                      <span key={index} className="px-2 py-0.5 text-xs font-medium bg-secondary/10 text-gray-400 rounded-full border border-secondary/20 hover:bg-secondary/20 transition-colors">
                         {tech}
                       </span>
                     ))}
-                    <span className="px-2 py-0.5 text-xs font-medium bg-muted text-foreground/60 rounded-full">+4 more</span>
+                    <span className="px-2 py-0.5 text-xs font-medium bg-muted text-gray-400 rounded-full">+4 more</span>
                   </div>
                 </div>
               </motion.div>
@@ -189,11 +189,11 @@ const TechStackSection = () => {
                   </div>
                   <div className="flex flex-wrap gap-1">
                     {['React Native', 'Flutter', 'Swift', 'Kotlin'].map((tech, index) => (
-                      <span key={index} className="px-2 py-0.5 text-xs font-medium bg-accent/10 text-accent rounded-full border border-accent/20 hover:bg-accent/20 transition-colors">
+                      <span key={index} className="px-2 py-0.5 text-xs font-medium bg-accent/10 text-gray-400 rounded-full border border-accent/20 hover:bg-accent/20 transition-colors">
                         {tech}
                       </span>
                     ))}
-                    <span className="px-2 py-0.5 text-xs font-medium bg-muted text-foreground/60 rounded-full">+3 more</span>
+                    <span className="px-2 py-0.5 text-xs font-medium bg-muted text-gray-400 rounded-full">+3 more</span>
                   </div>
                 </div>
               </motion.div>
@@ -202,13 +202,13 @@ const TechStackSection = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
-                className="group relative p-3 lg:p-4 bg-gradient-to-br from-emerald-500/5 via-cyan-500/5 to-blue-500/5 rounded-xl border border-emerald-500/10 hover:border-emerald-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-emerald-500/10"
+                className="group relative p-3 lg:p-4 bg-gradient-to-br from-red-500/5 via-red-600/5 to-red-700/5 rounded-xl border border-red-500/10 hover:border-red-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-red-500/10"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/10 via-cyan-500/10 to-blue-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                  <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 via-red-600/10 to-red-700/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="relative z-10">
                   <div className="flex items-center gap-2 mb-2">
-                    <div className="p-1.5 rounded-lg bg-gradient-to-br from-emerald-500/20 to-cyan-500/20">
-                      <svg className="w-3 h-3 lg:w-4 lg:h-4 text-emerald-500" fill="currentColor" viewBox="0 0 20 20">
+                    <div className="p-1.5 rounded-lg bg-gradient-to-br from-red-500/20 to-red-600/20">
+                                              <svg className="w-3 h-3 lg:w-4 lg:h-4 text-red-500" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" />
                       </svg>
                     </div>
@@ -216,11 +216,11 @@ const TechStackSection = () => {
                   </div>
                   <div className="flex flex-wrap gap-1">
                     {['PostgreSQL', 'MongoDB', 'Redis', 'Firebase'].map((tech, index) => (
-                      <span key={index} className="px-2 py-0.5 text-xs font-medium bg-emerald-500/10 text-emerald-500 rounded-full border border-emerald-500/20 hover:bg-emerald-500/20 transition-colors">
+                      <span key={index} className="px-2 py-0.5 text-xs font-medium bg-emerald-500/10 text-gray-400 rounded-full border border-emerald-500/20 hover:bg-emerald-500/20 transition-colors">
                         {tech}
                       </span>
                     ))}
-                    <span className="px-2 py-0.5 text-xs font-medium bg-muted text-foreground/60 rounded-full">+3 more</span>
+                    <span className="px-2 py-0.5 text-xs font-medium bg-muted text-gray-400 rounded-full">+3 more</span>
                   </div>
                 </div>
               </motion.div>
@@ -229,13 +229,13 @@ const TechStackSection = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                 transition={{ duration: 0.5, delay: 0.5 }}
-                className="group relative p-3 lg:p-4 bg-gradient-to-br from-orange-500/5 via-red-500/5 to-pink-500/5 rounded-xl border border-orange-500/10 hover:border-orange-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-orange-500/10"
+                className="group relative p-3 lg:p-4 bg-gradient-to-br from-red-600/5 via-red-700/5 to-red-800/5 rounded-xl border border-red-600/10 hover:border-red-600/30 transition-all duration-300 hover:shadow-lg hover:shadow-red-600/10"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-orange-500/10 via-red-500/10 to-pink-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                  <div className="absolute inset-0 bg-gradient-to-br from-red-600/10 via-red-700/10 to-red-800/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="relative z-10">
                   <div className="flex items-center gap-2 mb-2">
-                    <div className="p-1.5 rounded-lg bg-gradient-to-br from-orange-500/20 to-red-500/20">
-                      <svg className="w-3 h-3 lg:w-4 lg:h-4 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
+                    <div className="p-1.5 rounded-lg bg-gradient-to-br from-red-600/20 to-red-700/20">
+                                              <svg className="w-3 h-3 lg:w-4 lg:h-4 text-red-600" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" />
                       </svg>
                     </div>
@@ -243,11 +243,11 @@ const TechStackSection = () => {
                   </div>
                   <div className="flex flex-wrap gap-1">
                     {['AWS', 'Docker', 'Kubernetes', 'Azure'].map((tech, index) => (
-                      <span key={index} className="px-2 py-0.5 text-xs font-medium bg-orange-500/10 text-orange-500 rounded-full border border-orange-500/20 hover:bg-orange-500/20 transition-colors">
+                      <span key={index} className="px-2 py-0.5 text-xs font-medium bg-orange-500/10 text-gray-400 rounded-full border border-orange-500/20 hover:bg-orange-500/20 transition-colors">
                         {tech}
                       </span>
                     ))}
-                    <span className="px-2 py-0.5 text-xs font-medium bg-muted text-foreground/60 rounded-full">+4 more</span>
+                    <span className="px-2 py-0.5 text-xs font-medium bg-muted text-gray-400 rounded-full">+4 more</span>
               </div>
               </div>
               </motion.div>
@@ -256,13 +256,13 @@ const TechStackSection = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                 transition={{ duration: 0.5, delay: 0.6 }}
-                className="group relative p-3 lg:p-4 bg-gradient-to-br from-blue-500/5 via-indigo-500/5 to-purple-500/5 rounded-xl border border-blue-500/10 hover:border-blue-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10 col-span-2 lg:col-span-1"
+                className="group relative p-3 lg:p-4 bg-gradient-to-br from-red-700/5 via-red-800/5 to-red-900/5 rounded-xl border border-red-700/10 hover:border-red-700/30 transition-all duration-300 hover:shadow-lg hover:shadow-red-700/10 col-span-2 lg:col-span-1"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-indigo-500/10 to-purple-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                  <div className="absolute inset-0 bg-gradient-to-br from-red-700/10 via-red-800/10 to-red-900/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="relative z-10">
                   <div className="flex items-center gap-2 mb-2">
-                    <div className="p-1.5 rounded-lg bg-gradient-to-br from-blue-500/20 to-indigo-500/20">
-                      <svg className="w-3 h-3 lg:w-4 lg:h-4 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                    <div className="p-1.5 rounded-lg bg-gradient-to-br from-red-700/20 to-red-800/20">
+                                              <svg className="w-3 h-3 lg:w-4 lg:h-4 text-red-700" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clipRule="evenodd" />
                       </svg>
               </div>
@@ -270,11 +270,11 @@ const TechStackSection = () => {
               </div>
                   <div className="flex flex-wrap gap-1">
                     {['Git', 'Figma', 'VS Code', 'Jira'].map((tech, index) => (
-                      <span key={index} className="px-2 py-0.5 text-xs font-medium bg-blue-500/10 text-blue-500 rounded-full border border-blue-500/20 hover:bg-blue-500/20 transition-colors">
+                      <span key={index} className="px-2 py-0.5 text-xs font-medium bg-blue-500/10 text-gray-400 rounded-full border border-blue-500/20 hover:bg-blue-500/20 transition-colors">
                         {tech}
                       </span>
                     ))}
-                    <span className="px-2 py-0.5 text-xs font-medium bg-muted text-foreground/60 rounded-full">+4 more</span>
+                    <span className="px-2 py-0.5 text-xs font-medium bg-muted text-gray-400 rounded-full">+4 more</span>
               </div>
               </div>
               </motion.div>

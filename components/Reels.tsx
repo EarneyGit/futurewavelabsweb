@@ -10,19 +10,19 @@ import Script from 'next/script';
 const initialReels = [
   {
     id: 1,
-    title: 'Jelabikadai Pasiparupu Laddu',
-    description: 'Traditional sweet making process showcased beautifully.',
-    duration: '0:45',
-    views: '125K',
-    vimeoEmbed: `<div style="padding:177.78% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1094614274?h=f5c753c1ce&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Jelabikadai_Pasiparupu_laddu_v1"></iframe></div>`,
-  },
-  {
-    id: 2,
     title: 'Healthful Cashewnuts',
     description: 'Premium cashew nuts presentation for health-conscious consumers.',
     duration: '1:20',
     views: '89K',
     vimeoEmbed: `<div style="padding:177.78% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1094614236?h=d3c70da31b&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="HEALTHFULL_CASHEWNUTS"></iframe></div>`,
+  },
+  {
+    id: 2,
+    title: 'Jelabikadai Pasiparupu Laddu',
+    description: 'Traditional sweet making process showcased beautifully.',
+    duration: '0:45',
+    views: '125K',
+    vimeoEmbed: `<div style="padding:177.78% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1094614274?h=f5c753c1ce&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Jelabikadai_Pasiparupu_laddu_v1"></iframe></div>`,
   },
   {
     id: 3,
@@ -279,8 +279,8 @@ const Reels = () => {
                     dangerouslySetInnerHTML={{ __html: reel.vimeoEmbed }}
                   />
                 ) : (
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-secondary/20 to-accent/20 flex items-center justify-center">
-                    <span className="text-foreground/50 text-sm">Reel {reel.id}</span>
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-secondary/20 to-accent/20 flex items-center justify-center">
+                  <span className="text-foreground/50 text-sm">Reel {reel.id}</span>
                   </div>
                 )}
                 

@@ -4,27 +4,27 @@
 @layer utilities {
   .container { @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8; }
   .text-primary-gradient { 
-    background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 25%, #c084fc 50%, #d946ef 75%, #ec4899 100%);
+    background: linear-gradient(135deg, #dc2626 0%, #ef4444 25%, #f87171 50%, #fca5a5 75%, #fecaca 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
   .bg-primary-gradient { 
-    background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 25%, #c084fc 50%, #d946ef 75%, #ec4899 100%);
+    background: linear-gradient(135deg, #dc2626 0%, #ef4444 25%, #f87171 50%, #fca5a5 75%, #fecaca 100%);
   }
   .bg-primary-gradient-hover:hover { 
-    background: linear-gradient(135deg, #7c3aed 0%, #9333ea 25%, #a855f7 50%, #c026d3 75%, #db2777 100%);
+    background: linear-gradient(135deg, #b91c1c 0%, #dc2626 25%, #ef4444 50%, #f87171 75%, #fca5a5 100%);
   }
 }
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --primary: #8b5cf6;
-  --primary-gradient: linear-gradient(135deg, #8b5cf6 0%, #a855f7 25%, #c084fc 50%, #d946ef 75%, #ec4899 100%);
-  --primary-gradient-hover: linear-gradient(135deg, #7c3aed 0%, #9333ea 25%, #a855f7 50%, #c026d3 75%, #db2777 100%);
-  --secondary: #a855f7;
-  --accent: #c084fc;
+  --primary: #dc2626;
+  --primary-gradient: linear-gradient(135deg, #dc2626 0%, #ef4444 25%, #f87171 50%, #fca5a5 75%, #fecaca 100%);
+  --primary-gradient-hover: linear-gradient(135deg, #b91c1c 0%, #dc2626 25%, #ef4444 50%, #f87171 75%, #fca5a5 100%);
+  --secondary: #ef4444;
+  --accent: #f87171;
   --cyan: #06b6d4;
   --emerald: #10b981;
   --amber: #f59e0b;
@@ -57,11 +57,11 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
-    --primary: #8b5cf6;
-    --primary-gradient: linear-gradient(135deg, #8b5cf6 0%, #a855f7 25%, #c084fc 50%, #d946ef 75%, #ec4899 100%);
-    --primary-gradient-hover: linear-gradient(135deg, #7c3aed 0%, #9333ea 25%, #a855f7 50%, #c026d3 75%, #db2777 100%);
-    --secondary: #a855f7;
-    --accent: #c084fc;
+    --primary: #dc2626;
+    --primary-gradient: linear-gradient(135deg, #dc2626 0%, #ef4444 25%, #f87171 50%, #fca5a5 75%, #fecaca 100%);
+    --primary-gradient-hover: linear-gradient(135deg, #b91c1c 0%, #dc2626 25%, #ef4444 50%, #f87171 75%, #fca5a5 100%);
+    --secondary: #ef4444;
+    --accent: #f87171;
     --cyan: #06b6d4;
     --emerald: #10b981;
     --amber: #f59e0b;

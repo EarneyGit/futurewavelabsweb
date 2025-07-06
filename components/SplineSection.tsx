@@ -11,7 +11,7 @@ export function SplineSection() {
         {/* Hero Text Content */}
         <div className="text-center mb-12">
           <p className="text-lg md:text-xl lg:text-2xl text-white/80 mb-4 font-medium">
-            We&apos;re not watching the Future. We&apos;re Building it.
+            We're not watching the Future. We're Building it.
           </p>
           <div className="aurora-content">
             <h1 className="aurora-title">AI Revolution

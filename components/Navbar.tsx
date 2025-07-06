@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { FiMenu, FiX } from 'react-icons/fi';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -27,8 +28,8 @@ const Navbar = () => {
   };
 
   const navItems = [
+    { href: "#about-section", label: "About Us" },
     { href: "#expertise", label: "Expertise" },
-    { href: "#work", label: "Our Work" },
     { href: "#reels", label: "Reels" },
     { href: "#contact", label: "Contact" }
   ];
@@ -61,11 +62,15 @@ const Navbar = () => {
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
             <Link href="/" className="relative group">
-              <div className="relative text-xl md:text-2xl font-bold tracking-tight">
-                <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-                  Earney
-                </span>
-                <span className="text-white ml-2">Portfolio</span>
+              <div className="relative flex items-center">
+                <Image
+                  src="/fwl-logo-white.png"
+                  alt="FWL Logo"
+                  width={160}
+                  height={60}
+                  className="h-12 md:h-14 w-auto"
+                  priority
+                />
               </div>
             </Link>
           </motion.div>
@@ -104,7 +109,7 @@ const Navbar = () => {
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-accent via-secondary to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute inset-0 bg-white/20 scale-0 group-hover:scale-100 rounded-full transition-transform duration-500" />
-                <span className="relative z-10">Get a Quote</span>
+                <span className="relative z-10">Let's Talk</span>
               </Link>
             </motion.div>
           </div>
@@ -171,7 +176,7 @@ const Navbar = () => {
                     onClick={() => setIsOpen(false)}
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-accent via-secondary to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                    <span className="relative z-10">Get a Quote</span>
+                    <span className="relative z-10">Let's Talk</span>
                   </Link>
                 </motion.div>
               </div>
