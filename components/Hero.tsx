@@ -177,7 +177,7 @@ const Hero = () => {
       <div className="absolute inset-0 flex items-center justify-center z-10">
         <div className="text-center px-4 max-w-4xl mx-auto">
           <motion.h1 
-            className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-6 leading-tight uppercase whitespace-nowrap"
+            className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-6 leading-tight uppercase whitespace-nowrap"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
