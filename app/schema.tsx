@@ -3,8 +3,8 @@ export function OrganizationSchema() {
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "Future Wave Labs",
-        "url": "https://futurewavelabs.com",
-        "logo": "https://futurewavelabs.com/fwl-logo-white.png",
+        "url": "https://www.futurewavelabs.in",
+        "logo": "https://www.futurewavelabs.in/fwl-logo-white.png",
         "description": "Leading AI automation company specializing in intelligent agents, website development, mobile apps, software solutions, and cutting-edge digital transformation.",
         "foundingDate": "2024",
         "address": {

@@ -8,7 +8,7 @@ Allow: /
 Disallow: /api/
 
 # Sitemap location
-Sitemap: https://futurewavelabs.com/sitemap.xml
+Sitemap: https://www.futurewavelabs.in/sitemap.xml
 
 # Crawl delay (optional, helps prevent server overload)
 Crawl-delay: 1

@@ -21,7 +21,7 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://futurewavelabs.com'),
+  metadataBase: new URL('https://www.futurewavelabs.in'),
 
   title: "Future Wave Labs | Innovation across diverse and critical sectors",
   description: "Leading AI automation company specializing in intelligent agents, website development, mobile apps, software solutions, and cutting-edge digital transformation.",
@@ -56,13 +56,13 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: 'https://futurewavelabs.com',
+    canonical: 'https://www.futurewavelabs.in',
   },
 
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://futurewavelabs.com',
+    url: 'https://www.futurewavelabs.in',
     siteName: 'Future Wave Labs',
     title: "Future Wave Labs | Innovation across diverse and critical sectors",
     description: "Leading AI automation company specializing in intelligent agents, website development, mobile apps, software solutions, and cutting-edge digital transformation.",
