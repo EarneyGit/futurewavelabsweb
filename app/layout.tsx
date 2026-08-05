@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono, Open_Sans } from "next/font/google";
 import "./globals.css";
 import { SplashCursor } from "@/components/ui/splash-cursor.js";
@@ -19,6 +19,13 @@ const openSans = Open_Sans({
   subsets: ["latin"],
   weight: ["800"],
 });
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.futurewavelabs.in'),
@@ -82,13 +89,6 @@ export const metadata: Metadata = {
     description: "Leading AI automation company specializing in intelligent agents, website development, mobile apps, software solutions, and cutting-edge digital transformation.",
     images: ['/fwl-logo-white.png'],
     creator: '@futurewavelabs',
-  },
-
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 5,
-    userScalable: true,
   },
 
   icons: {

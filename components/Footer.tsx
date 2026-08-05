@@ -85,7 +85,7 @@ const Footer = () => {
             <ul className="space-y-3 text-foreground/70">
               <li>Bangalore, India</li>
               <li>hello@futurewavelabs.in</li>
-              <li>+91 99418 75131</li>
+              <li>+91 93423 93324</li>
             </ul>
           </div>
         </div>
@@ -96,13 +96,13 @@ const Footer = () => {
           </p>
           
           <div className="flex space-x-6">
-            <Link href="#" className="text-foreground/60 hover:text-primary text-sm transition-colors">
+            <Link href="/privacy-policy" className="text-foreground/60 hover:text-primary text-sm transition-colors">
               Privacy Policy
             </Link>
-            <Link href="#" className="text-foreground/60 hover:text-primary text-sm transition-colors">
+            <Link href="/terms-of-service" className="text-foreground/60 hover:text-primary text-sm transition-colors">
               Terms of Service
             </Link>
-            <Link href="#" className="text-foreground/60 hover:text-primary text-sm transition-colors">
+            <Link href="/sitemap.xml" className="text-foreground/60 hover:text-primary text-sm transition-colors">
               Sitemap
             </Link>
           </div>
