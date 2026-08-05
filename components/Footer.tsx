@@ -85,7 +85,7 @@ const Footer = () => {
             <ul className="space-y-3 text-foreground/70">
               <li>Bangalore, India</li>
               <li>hello@futurewavelabs.in</li>
-              <li>+91 99418 75131</li>
+              <li>+91 93423 93324</li>
             </ul>
           </div>
         </div>
