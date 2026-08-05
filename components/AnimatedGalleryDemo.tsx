@@ -28,7 +28,7 @@ const IMAGES_3 = [
 
 export const AnimatedGalleryDemo = () => {
   return (
-    <section className="pt-8 pb-8 bg-background">
+    <section id="work" className="pt-8 pb-8 bg-background scroll-mt-24">
       <div className="relative">
       <ContainerStagger className="relative z-[9999] -mb-12 place-self-center px-6 pt-28 pb-20 md:pt-12 md:pb-12 text-center">
         <ContainerAnimated>
